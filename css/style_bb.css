@@ -1,0 +1,18 @@
+main {
+    background-color: crimson;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.box,
+.box1 {
+    border: 1px solid black;
+    width: 400px;
+    margin: 50px;
+}
+
+.box {
+    box-sizing: border-box;
+}
