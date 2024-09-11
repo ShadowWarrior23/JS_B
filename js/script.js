@@ -6,7 +6,11 @@ but3.style.display = 'None'
 const card = document.querySelector('.card')
 card.style.backgroundColor = 'red';
 const fDiv = document.querySelector('.float-div');
-floatDiv.appendChild();
+const p = document.createElement('p');
+const text = 'Ez egy hosszú szöveg';
+p.textContent = text;
+fDiv.appendChild(p);
+p.style.fontSize = '1.2rem'
 
 
 // Változók, típusok, operátorok
