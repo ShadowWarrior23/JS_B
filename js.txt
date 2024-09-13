@@ -31,3 +31,14 @@ A JS gyengén típusos nyelve:
 - ==
 - 3 + '4' -> '34'
 - 3 * '4' -> 12
+Tömb - array (~ py lista {dinamikus, heterogén})
+const t = [];    NE: const t = new Array()
+Elemek elérése: t[0] vagy t.at(-1)
+t.slice(start, end) end nélkül a tömb végéig megy (szeletelő - ~ py [::])
+t.splice(start, deleteCount, inserted elements)
+const newT = t.toSpliced (start, deleteCount, inserted elements)
+t.indexOf(20) --> visszadobja az indexet (nem létezőnél -1)
+t.toString() --> '10, 20, 30'
+t.join(';-;') --> '10;-;20;-;30'
+t.join('') --> '102030'
+Az array.from() metódus tömböt készít a nodeList-ből. nodeList != array
